@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Module Authentication</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets\font_awesome\css\all.css">
+
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="" class="judul">Laravel Authentication</a></li>
+
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+                <span>
+                    <li><a href="" class="auth"><i class="fa fa-sign-in" aria-hidden="true" style="margin-right: 10px;"> </i>Login</a></li>
+
+
+                    <li><a href="" class="auth"><i class="fa-solid fa-registered" aria-hidden="true" style="margin-right: 10px;"> </i>Register</a></li>
+
+                </span>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="hero">
+        <div class="container">
+            <div class="background-hero">
+                <b><marquee style="border: 12px solid red; background-color: white; color: red; padding: 5px; font-size: 18px;"> Selamat datang di Tutorial Laravel. Pada kesempatan kali ini kita akan belajar Autentikasi </marquee></b>
+                <div class="background-text">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <h2>Laravel Authentication</h2>
+                    <p>Laravel adalah kerangka kerja PHP yang populer yang menyediakan berbagai fitur dan alat
+                        untuk mengelola proses ini dengan mudah.</p>
+                        
+                    <br><br><br>
+                    <a href="#about">About Us</a>
+                </div>
+
+                <div class="arrow">
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="margin-right: 10px;"><a href=""></a></i>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <h2>Membuat Autentikasi</h2>
+            <ol> 
+                <li><p>Login, Autentikasi, dan Logout dalam Laravel</p>
+                <ul>
+                    <dl>A. Pendahuluan <br>
+                        Dalam pengembangan aplikasi web, proses login, autentikasi, dan logout adalah komponen
+                        penting. Laravel adalah kerangka kerja PHP yang populer yang menyediakan berbagai fitur dan alat
+                        untuk mengelola proses ini dengan mudah. <br><br><br><br>
+
+                        B. Login dengan Laravel <br>
+                        Login adalah langkah pertama dalam proses autentikasi. Di Laravel, Anda dapat dengan mudah
+                        membuat formulir login, mengelola pengguna, dan menyediakan opsi login menggunakan Blade,
+                        yang merupakan template engine Laravel. <br><br><br><br>
+
+                        C. Autentikasi dengan Laravel <br>
+                        Setelah pengguna berhasil login, Anda harus memastikan mereka dapat mengakses halaman
+                        yang sesuai dan melindungi halaman tertentu. Laravel memiliki middleware dan kebijakan untuk
+                        mengelola autentikasi. <br><br><br><br>
+
+                        D. Logout dengan Laravel <br>
+                        Logout adalah langkah terakhir dalam proses autentikasi. Anda dapat membuat tautan logout
+                        dan menggunakan Auth::logout() untuk mengakhiri sesi pengguna. <br><br><br><br>
+                    
+                    </dl>
+                </ul>
+                </li>
+                
+                <li><p>Langkah Kerja :</p>
+                <ul>
+                    <dl>
+                        A. Buka project laravel yang akan diberikan halaman autetication <br><br><br><br>
+
+                        B. Atur database pada .env, sesuaikan nama database, password dan username phpmyadmin<br><br><br><br>
+                        
+                        C. Pada terminal, ketikkan : <br>
+                           <strong>Php artisan migrate</strong> 
+                        <br><br><br><br>
+
+                        D. Tambahkan 2 Controller, yaitu : <br>
+                            a. <strong> LoginCon </strong>
+                            b. <strong> DashboardCon </strong> 
+                        <br><br><br><br>
+
+                        E. Tambah kan pada route web.php kode berikut : <br>
+                        <div style="border: 2.8px solid #fa8c97; padding: 20px; background-color: black;">
+                            <span>
+                                Route::get('/', [LoginCon::class, 'login'])->name('login'); <br><br>
+                                Route::post('actionlogin', [LoginCon::class, 'actionlogin'])->name('actionlogin'); <br><br>
+                                Route::get('dashboard', [DashboardCon::class, 'index'])->name('dashboard')-> middleware('auth'); <br><br>
+                                Route::get('actionlogout', [LoginCon::class, 'actionlogout'])->name('actionlogout')-> middleware('auth'); <br><br>
+                            </span>
+                        </div>
+                        
+                        <br>
+                        <span style="float: right;">
+                            Author sekaligus Guru pembimbing kami : <a href="" style="color: red;">AchmadAli</a>
+                        </span>
+                    </dl>
+                </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Jika ada ingin bertanya lebih lanjut, anda bisa menghubungi kami melalui form dibawa ini</p>
+
+            <form action="#" method="get">
+
+                <input type="text" placeholder="Nama" required="required">
+
+                <input type="email" placeholder="Email" required="required"> <br><br>
+
+                <textarea  placeholder="Keterangan"  required="required"></textarea> <br><br>
+
+                <input type="submit" value="Simpan Data">
+
+            </form>
+
+        </div>
+                <!-- SOSIAL MEDIA START -->
+                <div class="sosial-media">
+                    <a href="https://www.youtube.com/channel/UCXzeGu0L9MH1B6-J-ugkI_g"><i class="fab fa-youtube"></i></a>
+                    <a href="https://discord.com/channels/@me"><i class="fab fa-discord"></i></a>
+                    <a href="https://github.com/KevinBagasSaputra"><i class="fab fa-github"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <!-- SOSIAL MEDIA END -->
+    </div>
+
+    
+    <div class="footer">
+        <hr>
+        <div class="container">
+            <p>© Copyright <a href="mailto:kevinbagassaputra@gmail.com" style="color: red;">Kevin</a>. All Rights Reserved</p>
+            <p>Designed by Kevin Bagas Saputra</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+@media only screen and (max-width: 767px){
+    /* CSS rules for mobile devices */
+}
+
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+    /* CSS rules for Tablets */
+}
+
+@media only screen and (max-width: 992px) and (max-width: 1199px) {
+    /* CSS rules for Laptop */
+}
+
+
+*,
+html,
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(9, 1, 80);
+}
+
+/* navbar START */
+
+nav{
+    margin: auto;
+    width: 1200px;
+}
+
+nav .container{
+    background-color: red;
+}
+
+nav .container ul{
+    padding: 15px;
+}
+
+nav .container ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav .container ul li .judul{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+
+    margin-left: 40px;
+    margin-right: 140px;
+    padding: 10px;
+}
+
+nav .container ul li .auth{
+    margin-left: 60px;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 2px white;
+    font-weight: 700;
+}
+
+nav .container ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+
+    margin-right: 10px;
+    transition: all 430ms ease 58ms;
+}
+
+nav .container ul li a:hover{
+    color: white;
+    font-weight: 600;
+
+    background-color: rgba(226, 5, 5, 0.87);
+    border-radius: 6px;
+
+    transition: all 20ms ease-out;
+}
+/* navbar END */
+
+/* Hero Start */
+.hero{
+    width: 1200px;
+    margin: auto;
+}
+
+.hero .container{
+
+}
+
+.hero .container .background-hero{
+    background-image: url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714780800&semt=ais');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 700px;
+    text-align: center;
+    color: white;
+}
+
+.hero .container .background-hero ,h2::selection ,p::selection{
+    background-color: red;
+}
+
+.hero .container .background-hero h2{
+    font-size: 70px;
+    
+    margin: auto;
+    padding: 40px;
+}
+
+.hero .container .background-hero p{
+    width: 520px;
+    margin: auto;
+
+    font-weight: 700;
+}
+
+.hero .container .background-hero a{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+
+    border: 2px solid violet;
+    border-radius: 7px;
+    padding: 15px;
+
+    box-shadow: 0 0 10px 2px violet;
+
+    transition: all ease-in 420ms;
+}
+
+.hero .container .background-hero a:hover{
+    box-shadow: 2px 14px 1445px 114px rgb(59, 32, 179);
+    transition: box-shadow ease-out 420ms;
+
+    font-weight: 700;
+}
+
+.arrow{
+    position: fixed;
+}
+
+.arrow i{
+    margin-left: 1150px;
+}
+
+/* Hero END */
+
+/* About Start */
+.about{
+    margin: auto;
+    width: 1200px;
+
+    color: white;
+}
+
+.about .container{
+    background-color: rgb(10, 0, 99);
+    padding: 60px;
+}
+
+.about .container ol{
+    border: 2px dashed #D7949B;
+    box-shadow: 0 0 14px 2px #fa8c97;
+    
+    padding: 25px;
+
+    transition: all ease-in 560ms 510ms;
+}
+
+.about .container ol:hover{
+    border: 2px solid #D7949B;
+    box-shadow: 0 0 34px 1px #ff7664;
+
+    background-color: rgb(10, 2, 78);
+    transition: all ease-out 851ms ;
+}
+/* About End */
+
+
+/* Contact Start */
+.contact{
+    width: 1200px;
+    margin: auto;
+}
+
+.contact .container{
+    background-color: rgb(25, 16, 105);
+    color: white;
+    padding: 60px;
+}
+
+.contact .container form{
+    padding: 55px;
+}
+
+.contact .container form input{
+    padding: 5px;
+}
+
+.contact .sosial-media{
+    float: right;
+    font-size: 20px;
+    margin: 20px;
+
+}
+
+.fa-youtube:hover{
+    color: #da0e23;
+}
+
+.fa-discord:hover{
+    color: rgb(0, 89, 255);
+}
+
+.fa-github:hover{
+    color: white;
+}
+
+.fa-whatsapp:hover{
+    color: green;
+}
+
+.fa-linkedin:hover{
+    color: rgb(33, 33, 255);
+}
+/* Contact End */
+
+
+
+/* Footer Start */
+.footer{
+    margin: auto;
+    width: 1200px;
+}
+
+.footer .container{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+  /* Footer End */
